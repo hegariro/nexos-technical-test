@@ -1,2 +1,7 @@
-com/cardsnexosapp/bootstrap/BootstrapConfig.class
+com/cardsnexosapp/cards_management/application/service/CardService.class
+com/cardsnexosapp/cards_management/domain/repository/CardRepository.class
 com/cardsnexosapp/main_app/CardsNexosApp.class
+com/cardsnexosapp/bootstrap/BootstrapConfig.class
+com/cardsnexosapp/cards_management/domain/model/Card$CardBuilder.class
+com/cardsnexosapp/cards_management/domain/model/Card.class
+com/cardsnexosapp/cards_management/infrastructure/graphql/CardResolver.class

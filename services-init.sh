@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker compose down -v
-docker-compose up --build -d
+docker compose up --build -d
 
 #sleep 5
 

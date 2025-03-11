@@ -1,0 +1,12 @@
+type Card {
+    id: ID!
+    cardNumber: String!
+    ownerId: ID!
+    expirationDate: String!
+    cardType: String!
+}
+
+type Mutation {
+    createCard(cardNumber: String!, ownerId: ID!, expirationDate: String!, cardType: String!): Card
+}
+

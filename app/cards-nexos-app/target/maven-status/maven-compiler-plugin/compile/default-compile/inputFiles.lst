@@ -1,2 +1,6 @@
 /home/hegariro/Documentos/Nexos/PruebaTecnica/app/cards-nexos-app/src/main/java/com/cardsnexosapp/main_app/CardsNexosApp.java
+/home/hegariro/Documentos/Nexos/PruebaTecnica/app/cards-nexos-app/src/main/java/com/cardsnexosapp/card_management/infrastructure/graphql/CardResolver.java
+/home/hegariro/Documentos/Nexos/PruebaTecnica/app/cards-nexos-app/src/main/java/com/cardsnexosapp/card_management/domain/model/Card.java
+/home/hegariro/Documentos/Nexos/PruebaTecnica/app/cards-nexos-app/src/main/java/com/cardsnexosapp/card_management/application/service/CardService.java
 /home/hegariro/Documentos/Nexos/PruebaTecnica/app/cards-nexos-app/src/main/java/com/cardsnexosapp/bootstrap/BootstrapConfig.java
+/home/hegariro/Documentos/Nexos/PruebaTecnica/app/cards-nexos-app/src/main/java/com/cardsnexosapp/card_management/domain/repository/CardRepository.java

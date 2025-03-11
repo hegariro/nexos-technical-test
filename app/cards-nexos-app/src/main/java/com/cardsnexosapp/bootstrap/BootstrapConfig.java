@@ -5,11 +5,11 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class BootstrapConfig {
+    // Aquí puedes inicializar datos, conexiones u otras configuraciones previas al arranque.
 
     @PostConstruct
     public void init() {
-        System.out.println("🔹 BootstrapConfig: Aplicación Cards Nexos iniciada correctamente.");
-        // Aquí puedes inicializar datos, conexiones u otras configuraciones previas al arranque.
+      System.out.println("🔹 BootstrapConfig: Aplicación Cards Nexos iniciada correctamente.");
     }
 }
 
