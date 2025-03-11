@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpasswordnexos
+      MYSQL_DATABASE: card_db_nexos
+      MYSQL_USER: usernexos
+      MYSQL_PASSWORD: userpasswordnexos
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./database-migrations/create-database.sql:/docker-entrypoint-initdb.d/create-database.sql
+      - mariadb_data:/var/lib/mysql
+
+  spring-app:
+    build:
+      context: ./app  # La carpeta donde está el Dockerfile y el código de la app
+      dockerfile: Dockerfile
+    container_name: spring_container
+    restart: always
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mariadb:3306/card_db_nexos
+      SPRING_DATASOURCE_USERNAME: usernexos
+      SPRING_DATASOURCE_PASSWORD: userpasswordnexos
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mariadb
+
+volumes:
+  mariadb_data:
